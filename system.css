@@ -1,0 +1,673 @@
+@charset "utf-8";
+@import url("reset.css");
+/* CSS Document */
+body {color:#FFF;
+      font-family:"Times New Roman", Times, serif,"Adobe 宋体 Std L";
+	  background-image:url(img/background.jpg);}
+img {width:100%}
+/***********************************************/
+#start {
+	width:100%;
+	display:none;
+	z-index:10;
+	margin:0 ;
+	padding:0;
+	text-align:center;}
+#start img{
+	width:50%;
+	margin:0;
+	padding:0;
+	}
+
+#menu {width:100%;
+       margin:0;
+	   padding:0;
+	   position:relative;
+	   height:auto;
+	   z-index:10;
+	   }
+#title {
+	float:left;
+	}
+#title img{
+	height:auto;
+	width:300px;
+	margin:0;
+	padding:0;}
+nav {background-color:#66BAB7;
+     display: inline-block;
+     vertical-align: top;
+     text-align: left;
+	 width:100%;
+	 height:auto;
+	 min-height:70px;
+	 position:fixed;
+	 height:70px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style-type: none;
+	float:right;
+	width:20%;/*選單按鈕寬度*/
+	max-width:200px;
+	text-align:center;
+	}
+nav ul li a       {color:#FFF;
+				   text-decoration:none;
+				   display:block;
+				   font-family:"Adobe 宋体 Std L";
+				   margin:5% 0;
+				   font-size:1.3em;
+				   line-height:50px;
+				   }
+/*******
+nav ul li:hover a {background-color:#B28FCE;}
+nav ul li#first a {border-right:none;}
+*******/
+#menu-toggle {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: none;
+    text-align: left;
+    line-height: 50px;
+    vertical-align: middle;
+	color:#FFF;
+	text-decoration:none;
+	font-size:30px;
+	}
+@media only screen and (max-width: 700px) {
+#nav {
+	min-width:300px;}}
+@media only screen and (max-width: 650px) {
+#title img{
+	width:220px;}}
+@media only screen and (max-width: 500px) {
+nav               {position: fixed;
+                   border-bottom:none;}
+nav > ul          {display: none;}
+#menu-toggle      {display: block;
+                   background-color:#66BAB7;/*手機板工具列顏色*/
+				   text-align:center;
+				   color:#FFF;/*menu顏色*/
+				   font-family:"Times New Roman", Times, serif;                
+				 }
+nav:hover > ul    {display: block;
+                   margin-top: 40px;
+				   background-color:#66bab7;
+				   }
+nav:hover > ul li {float:none;
+                   max-width:700px;
+				   width:100%;
+				   border-top:1px solid #FFF;
+				   
+				   }
+nav:hover > ul li a{line-height:35px;
+                    border-left:none;
+					font-size:1.5em;}
+#title {
+	display:none;
+}
+#start {
+	display:block;
+}
+#start img{
+	width:70%;
+	}
+}
+/*************************************************/
+#banner{
+	padding-top:70px;
+	}
+#pc img {
+	width:100%;
+	height:auto;}
+#phone img{
+	width:100%;
+	height:auto;
+	display:none;}
+@media only screen and (max-width: 900px) {
+#banner{
+	padding-top:0;
+	}
+#pc img{
+	display:none;}
+#phone img{
+	display:inherit;
+	padding-top:50px;}
+}
+
+
+#slogan{
+	width:450px;
+	height:300px;
+	background-image:url(img/slogan.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	margin:0 auto;
+	font-size:1.3em;
+	padding-top:40px;
+	z-index:5;
+	position:absolute;
+	top:150px;
+	left:0;
+	right:0;
+	bottom:;
+	font-family:"微軟正黑體";
+	display:none;
+}
+#slogan p{
+	margin:0 auto;
+	margin-left:90px;
+	}
+
+@media only screen and (max-width: 900px) {
+#slogan{
+	margin-top:10%;
+	display:inherit;}}
+@media only screen and (max-width: 600px) {
+#slogan{
+	width:300px;
+	height:300px;
+	font-size:1.1em;
+	margin-top:0%;
+	padding-top:50px;
+	display:inherit;
+	background-image:url(img/slogan2.png);
+	}
+#slogan p{
+	margin-left:40px;
+	}}
+	
+/************************************************/	 
+#about{
+	position:relative;
+	clear:both;
+	width:100%;
+	height:auto;
+	padding:0;
+	margin:0;
+	}
+#photo {
+	position:absolute;
+	bottom:100px;
+	left:10%;
+	width:35%;}
+#photo img {
+	width:100%;
+	max-width:700px;
+	height:auto;}
+#about_bg {
+	background-color:#00A99D;
+	width:100%;
+	}
+#about_top {
+	width:80%;
+	padding-top:25%;
+	margin:0 auto;
+	
+	}
+#about_top h2{
+	font-family:"宋体";
+	text-align:right;
+	font-size:3.5em;
+	font-weight:100;}
+#about_top p {
+	font-family:"Monotype Corsiva" , "宋体";
+	text-align:right;
+	font-size:3.2em;}
+#about_bottom_bg{
+	width:100%;
+	height:350px;
+	margin:50px auto;}
+#about_bottom {
+	color:#777;
+	font-family:"宋体";
+	position:absolute;
+	right:10%;}
+#about_bottom p{
+	margin-top:0.5em;
+	font-size:1.5em;}
+@media only screen and (max-width: 1550px) {
+#photo {
+	bottom:150px;}}
+@media only screen and (max-width: 1380px) {
+#photo {
+	bottom:200px;}}
+@media only screen and (max-width: 1150px) {
+#photo {
+	top:250px;}}
+@media only screen and (max-width: 1150px) {
+#photo {
+	left:5%;}}
+@media only screen and (max-width: 780px) {
+#about_bg {
+	padding-top:170px;
+	height:300px;}
+#photo {
+	position:absolute;
+	bottom:300px;
+	left:25px;
+	width:40%;}
+#photo img {
+	width:100%;
+	height:auto;}
+#about_bg {
+	background-color:#00A99D;
+	width:100%;
+	}
+#about_top h2{
+	font-family:"宋体";
+	text-align:right;
+	font-size:2.5em;
+	font-weight:100;}
+#about_top p {
+	font-family:"Monotype Corsiva" , "宋体";
+	text-align:right;
+	font-size:2em;}
+#about_bottom {
+	width:365px;
+	margin:0 auto;
+	position:relative;
+	right:auto;}
+}
+@media only screen and (max-width: 500px) {
+#about_bg {
+	padding-top:170px;
+	height:200px;}
+#photo {
+	position:absolute;
+	top:230px;
+	width:37%;}
+#photo img {
+	width:100%;
+	height:auto;}
+#about_bg {
+	background-color:#00A99D;
+	width:100%;
+	}
+#about_top h2{
+	font-family:"宋体";
+	text-align:right;
+	font-size:1.7em;
+	font-weight:100;}
+#about_top p {
+	font-family:"Monotype Corsiva" , "宋体";
+	text-align:right;
+	font-size:1.5em;}
+}
+/***********************************************/
+#service{
+	clear:both;
+	height:auto;
+	padding-top:90px;
+	}
+
+#project01 , #project02 , #project03 , #project04 , #project05 , #project06{
+	width:calc(100%/3);
+	height:auto;
+	float:left;
+	display:block;
+	background-size:100%;
+	background-repeat:no-repeat;
+	padding:0;
+	zoom:1;
+}
+#project01{
+		background-image:url(img/rmt01.png);
+}
+#project02{
+		background-image:url(img/rmt02.png);
+}
+
+#project03{
+	background-image:url(img/rmt03.png);
+}
+
+#project04{
+	background-image:url(img/rmt04.png);
+}
+
+#project05{
+	background-image:url(img/rmt05.png);
+}
+
+#project06{
+	background-image:url(img/rmt06.png);
+}
+
+#more {
+	width:100%;
+	height:100%;
+	bottom:0;
+	background-image:url(img/bg.png);
+	color:#666;
+	padding:5% 0;
+}
+#more img{
+	width:100%;
+	height:auto;
+	}
+#more h2{
+	text-align:center;
+	font-size:3em;
+	margin-bottom:2%;
+	}
+#more p{
+	display:block;
+	width:70px;
+	line-height:2.5em;
+	text-align:center;
+	margin:0 auto;
+	border:solid #FFF 1px;
+	}
+#more a{
+	color:#666;
+	display:block;}
+@media only screen and (max-width: 1200px) {
+#project01 , #project02 , #project03 , #project04 , #project05 , #project06{
+	width:50%}}
+	
+@media only screen and (max-width: 600px) {
+#project01 , #project02 , #project03 , #project04 , #project05 , #project06{
+	width:100%}}
+
+
+/**********************************************/
+#imfor {
+	clear:both;
+	position:relative;
+	width:100%;
+	height:100%;
+	/*color:#888;*/
+	color:#FFF;
+	padding-bottom:200px;
+	padding-top:6.5em;
+	bottom:0;
+	background-color:#6699A1;
+	}
+#imfor ul li h1{
+	font-size:1em;
+	font-weight:100;}
+#bord {
+	width:80%;
+	margin:1em auto;
+	padding:0;
+	border-bottom:solid #CCC thin;}
+#imfor ul {
+	width:49.8%;
+	margin:0;
+	padding:0;
+	margin:5% 0;
+	float:left;
+	text-align:center;}
+#imfor ul li {
+	text-align:left;
+	margin:0 10%;
+	margin-bottom:1em;
+	}
+@media only screen and (max-width: 930px) {
+#imfor {
+	height:90%;}
+#imfor ul {
+	width:100%;
+	margin:10% 0;}}
+
+/**********************************************/
+#traffic {
+	width:40%;
+	height:auto;
+	margin:0 5%;
+	padding:0;
+	margin-top:300px;
+	}
+@media only screen and (max-width: 930px) {
+#traffic {
+	width:80%;
+	margin:0 10%;
+	margin-top:400px;}}
+	
+/********************************************/
+#write     { margin:0 auto;
+			 width:60%;
+			 display: inline-block;
+			 padding:0 5%;
+			 padding-top:190px;
+			 color:#000;
+			 background-color:#6699A1;
+			 color:#E6E6E6;
+			 margin-left:-40px;
+			 padding-bottom:100px;
+			 }
+#write h1   {font-size:2em;
+             color:#FFF;}
+#write h2   {font-size:2em;
+             color:#FFF;}
+#write h3   {font-size:1.2em;
+			 margin-top:1em;
+			 color:#FFF;}
+#write p    {text-indent :2em;
+             font-size:1em;
+			 margin:2em auto;
+			 padding:0 0.4em;
+			 letter-spacing:0.25em;
+			 text-align:justify;}
+p#clean {text-indent:0;
+                padding:0;}
+#write h4   {text-align:right;
+             font-size:0.9em;
+			 font-weight:100;
+			 margin:20px auto;}
+#micro img  {width:100%;
+             height:auto;
+			 max-width:600px;
+			 margin:0 auto;
+			 display:block;}
+#filler img  {width:100%;
+             height:auto;
+			 max-width:300px;
+			 margin:0 auto;
+			 display:block;}
+#ab img     {width:30%;
+             height:auto;
+			 float:left;
+			 margin:10px 0 0 15%;
+			 overflow:hidden;}
+#ab p       {float:left;
+             width:30%;
+			 height:auto;
+			 margin:10px 0 0 12%;
+			 text-align:center;
+			 }
+#chest05    {max-width:700px;
+             width:100%;
+			 height:auto;
+			 margin:0 auto;
+			 padding:0;
+			 }
+#chest05 img{width:30%;
+             height:auto;
+			 margin:0 1.25%;
+}
+#chest05 p  {float:left;
+             width:25%;
+			 margin:0 6% 0 0%;
+			 display:block;
+			 text-align:center;
+			 
+}
+@media only screen and (max-width: 800px) {
+#chest05 img{margin:0 0.5%;
+}
+#chest05 p  {width:25%;
+			 margin:0 1%;
+			 font-size:0.1em;
+}
+}
+##css_table {
+      display:table;
+	  width:70%;
+  }
+#css_tr {
+      display: table-row;
+  }
+#css_td {
+      display: table-cell;
+	  width:20%;
+	  max-width:150px;
+  }
+#css_tr_first {
+      display: table-row;
+	  color:#FF0000;
+}
+}
+
+
+		 
+/**/
+#submenu { }
+#submenu ul {
+    margin: 0 1.25%;
+	border-left:solid #86C166 15px;
+    padding: 0;
+	padding-top:190px;
+	padding-bottom:50px;
+	width:25%;
+	float:left;
+	background-color:#86C166;
+	position:relative;
+	z-index:7;
+	opacity:0.8;
+}
+#submenu ul li {
+    list-style-type: none;
+    padding: 6px 0;
+	border-left:1px solid #FFF;
+	text-align:left;
+	line-height:2em;
+	margin-left:25%;
+}
+#submenu ul li a {color:#FFF;
+                  text-decoration:none;
+				  margin-left:10px;
+				  display:block;}
+#submenu p {color:#FFF;
+		    padding:10px 0;
+			padding-left:10px;
+			font-size:1.8em;
+			font-weight:bold;
+			margin-left:15%;}
+#submenu ul li:hover {
+    background: #81C7D4;
+}
+#submenu ul li:hover a {
+    color: #FFF;
+}
+/***/
+
+#menu-tool {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    display: none;
+    background: #CCFFCC;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+	margin-top:60%;
+	text-decoration:none;
+	padding-top:15px;
+}
+
+@media only screen and (max-width: 700px) {
+	#write {
+	padding:0;
+	padding-bottom:100px;
+	padding-top:20px;
+	margin:0;}
+    #submenu {
+        position: fixed;
+		z-index:1;
+    }
+    #submenu > ul {
+        display: none;
+		width:500px;
+		padding:0;
+		opacity:0.9;
+    }
+    #menu-tool {
+        display: block;
+		border-radius:0 100px 100px 0;
+       background-color:#666;
+	   height:50px;
+	   width:40px;
+	   color:#FFFFFF;
+	   font-family:"Times New Roman","微軟正黑體";
+	   opacity:0.9;
+    }
+	#mnu-tool ul li a {padding-top:30%;}
+    #submenu:hover > ul {
+        display: block;
+        margin-top: 90px;
+		background-color:#86C166;
+    }		
+	#menu-tool:hover {opacity:0;}
+#submenu ul li {
+	width:100%;
+	border:none;
+	margin:0;
+    }
+#submenu p {
+	border-bottom: 1px solid #FFF;
+	margin:0;}
+#write {width:100%;
+        max-width:none;
+		margin-top:90px;
+		}
+#ab p {margin-bottom:10px;
+}}
+/***************************************************/
+#advhead {
+	   background-color:#F2F2F2;
+       width:100%;
+	   text-align:center;
+	   position:fixed;
+	   height:auto;
+	   margin-top:70px;
+	   z-index:9;
+	  }
+#advmenu   {width:100%;
+            max-width:1000px;
+			margin:0 auto;
+			padding:0;
+			}
+#advmenu img {max-width:80px;
+              width:100%;
+              height:auto;
+			  margin:0 30%;
+			  }
+
+#advmenu ul{height:auto;
+			margin:0 auto;
+			padding:0;
+			max-width:1000px;
+			width:100%;
+}
+#advmenu ul li{width:16%;
+               max-width:160px;
+			   float:left;
+             }
+
+@media only screen and (max-width: 700px) {
+#advhead {bottom:0;
+          margin:0;
+          padding:0;
+          }}
+
+	
+
+
+	
